@@ -1,1 +1,23 @@
-{"name":"","short_name":"","icons":[{"src":"/icon/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/icon/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#7F1D1D","background_color":"#ffffff","display":"standalone"}
+{
+  "name": "Ahmad Ridwan",
+  "short_name": "Wan",
+  "start_url": "/index.html",
+  "description": "Personal website to shares happiness, knowledge and some love",
+  "icons": [
+    {
+      "src": "/icon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#7F1D1D",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "prefer_related_applications": false
+}
