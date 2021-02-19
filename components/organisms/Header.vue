@@ -8,7 +8,12 @@
         <div class="flex items-center justify-between w-full md:w-auto">
           <a href="#">
             <span class="sr-only">Workflow</span>
-            <img class="h-8 w-auto sm:h-16" src="/logo.png" v-lazy-load />
+            <img
+              class="h-8 w-auto sm:h-16"
+              src="/logo.png"
+              alt="logo"
+              v-lazy-load
+            />
           </a>
           <div class="-mr-2 flex items-center md:hidden">
             <button
@@ -52,7 +57,10 @@
           >Work</a
         >
 
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
+        <a
+          href="https://ahmadridwan31.medium.com"
+          class="font-medium text-gray-500 hover:text-gray-900"
+          target="_blank"
           >Blog</a
         >
 
@@ -140,9 +148,10 @@
               >
 
               <a
-                href="#"
+                href="https://ahmadridwan31.medium.com"
                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                 role="menuitem"
+                target="_blank"
                 >Blog</a
               >
 
