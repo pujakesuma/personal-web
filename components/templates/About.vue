@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto">
-    <h2>About</h2>
+    <h2>Abouta</h2>
   </div>
 </template>
 
