@@ -119,9 +119,6 @@ export default {
     manifest: {
       lang: 'en',
     },
-    icon: {
-      source: '/icon/apple-touch-icon.png',
-    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
