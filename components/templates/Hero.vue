@@ -41,10 +41,8 @@
             <p
               class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
             >
-              Lorema ipsuma dolor sit amet consectetur adipisicing elit. Optio
-              dolorem libero ducimus ex provident sequi, sit autem, itaque
-              perspiciatis quasi ipsum laudantium dolor consequatur facilis et,
-              vero atque! Perferendis, dolore!
+              I'm a Web Developer based in Jakarta, Indonesia. I love to shares
+              happiness, knowledge and some random stuff.
             </p>
             <div
               class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
@@ -74,7 +72,7 @@
       <img
         class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
         src="/ar.png"
-        alt=""
+        alt="image"
       />
     </div>
   </div>
