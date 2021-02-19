@@ -8,7 +8,7 @@
         <div class="flex items-center justify-between w-full md:w-auto">
           <a href="#">
             <span class="sr-only">Workflow</span>
-            <img class="h-8 w-auto sm:h-16" src="/logo.png" />
+            <img class="h-8 w-auto sm:h-16" src="/logo.png" v-lazy-load />
           </a>
           <div class="-mr-2 flex items-center md:hidden">
             <button
@@ -84,7 +84,7 @@
         >
           <div class="px-5 pt-4 flex items-center justify-between">
             <div>
-              <img class="h-8 w-auto" src="/logo.png" alt="logo" />
+              <img class="h-8 w-auto" src="/logo.png" alt="logo" v-lazy-load />
             </div>
             <div class="-mr-2">
               <button
@@ -176,5 +176,3 @@ export default {
   }),
 };
 </script>
-
-<style></style>
