@@ -1,7 +1,7 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "editor.tabSize": 2,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   "liveServer.settings.donotShowInfoMsg": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
