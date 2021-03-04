@@ -1,9 +1,26 @@
 <template>
-  <div class="mx-auto">
-    <h2>Abouta</h2>
-  </div>
+  <wrapper class="flex items-center">
+    <template #content>
+      <div class=" ">
+        <h2 class="text-white text-2xl font-bold sm:text-3xl md:text-4xl mb-3">
+          About Me
+        </h2>
+        <p v-for="i in 3" :key="i" class=" text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+          quis dignissimos? Ipsam rerum voluptas, molestias porro architecto
+          laboriosam in distinctio neque tempora mollitia et, ipsum eveniet
+          deleniti quis delectus ad?
+        </p>
+      </div>
+    </template>
+  </wrapper>
 </template>
 
 <script>
-export default {};
+import Wrapper from '@/components/wrapper/Wrapper';
+export default {
+  components: {
+    Wrapper,
+  },
+};
 </script>

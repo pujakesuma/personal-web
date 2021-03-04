@@ -19,7 +19,7 @@
             <button
               id="main-menu"
               type="button"
-              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              class="bg-secondary rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               aria-haspopup="true"
               @click="isOpen = !isOpen"
             >
@@ -88,7 +88,7 @@
         class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
       >
         <div
-          class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+          class="rounded-lg shadow-md bg-secondary ring-1 ring-black ring-opacity-5 overflow-hidden"
         >
           <div class="px-5 pt-4 flex items-center justify-between">
             <div>
@@ -97,7 +97,7 @@
             <div class="-mr-2">
               <button
                 type="button"
-                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-gray-500 hover:text-gray-500 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                 @click="isOpen = !isOpen"
               >
                 <span class="sr-only">Close main menu</span>
@@ -128,28 +128,28 @@
             <div class="px-2 pt-2 pb-3 space-y-1" role="none">
               <a
                 href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
                 role="menuitem"
                 >About</a
               >
 
               <a
                 href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
                 role="menuitem"
                 >Experiences</a
               >
 
               <a
                 href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
                 role="menuitem"
                 >Work</a
               >
 
               <a
                 href="https://ahmadridwan31.medium.com"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
                 role="menuitem"
                 target="_blank"
                 >Blog</a
@@ -157,7 +157,7 @@
 
               <a
                 href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
                 role="menuitem"
                 >Contact</a
               >
