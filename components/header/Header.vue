@@ -9,17 +9,17 @@
           <a href="#">
             <span class="sr-only">Workflow</span>
             <img
+              v-lazy-load
               class="h-8 w-auto sm:h-16"
               src="/logo.png"
               alt="logo"
-              v-lazy-load
             />
           </a>
           <div class="-mr-2 flex items-center md:hidden">
             <button
+              id="main-menu"
               type="button"
               class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-              id="main-menu"
               aria-haspopup="true"
               @click="isOpen = !isOpen"
             >
@@ -92,13 +92,13 @@
         >
           <div class="px-5 pt-4 flex items-center justify-between">
             <div>
-              <img class="h-8 w-auto" src="/logo.png" alt="logo" v-lazy-load />
+              <img v-lazy-load class="h-8 w-auto" src="/logo.png" alt="logo" />
             </div>
             <div class="-mr-2">
               <button
                 type="button"
-                @click="isOpen = !isOpen"
                 class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                @click="isOpen = !isOpen"
               >
                 <span class="sr-only">Close main menu</span>
                 <!-- Heroicon name: x -->
