@@ -92,6 +92,19 @@ export default {
         hid: 'manifest',
         href: '/icon/site.webmanifest.json',
       },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Lato&display=swap',
+      },
     ],
   },
 
@@ -105,7 +118,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
