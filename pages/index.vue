@@ -6,8 +6,8 @@
 
 <script>
 import Hero from '@/components/templates/Hero';
-import About from '@/components/templates/About';
+// import About from '@/components/templates/About';
 export default {
-  components: { Hero, About },
+  components: { Hero },
 };
 </script>

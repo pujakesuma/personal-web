@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen bg-primary container mx-auto px-4 py-24">
     <div
-      class="flex flex-col sm:flex-row items-center justify-center h-full bg-secondary sm:bg-primary rounded-lg sm:rounded-none"
+      class="flex flex-col sm:flex-row items-center justify-center h-full rounded-lg sm:rounded-none"
     >
       <div class="text-center sm:text-left w-auto sm:w-1/2 order-2 sm:order-1 ">
         <p
@@ -30,33 +30,18 @@
           />
         </div>
       </div>
-      <!-- <svg
-          class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-          fill="currentColor"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
-
-        <Header /> -->
-      <!-- <main 
-          class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
-        
-        ></main> -->
     </div>
   </div>
 </template>
 
 <script>
-import Header from '@/components/header/Header';
+// import Header from '@/components/header/Header';
 export default {
   data: () => ({
     isOpen: false,
   }),
-  components: {
-    Header,
-  },
+  // components: {
+  //   Header,
+  // },
 };
 </script>
