@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <Hero />
+  <div class="container mx-auto">
+    <Landing />
   </div>
 </template>
 
 <script>
-import Hero from '@/components/templates/Hero';
-import About from '@/components/templates/About';
+import Landing from '@/components/landing/Landing';
 export default {
-  components: { Hero, About },
+  components: { Landing },
 };
 </script>
