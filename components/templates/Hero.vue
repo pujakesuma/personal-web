@@ -4,7 +4,15 @@
       <div
         class="flex flex-col sm:flex-row items-center justify-center h-full rounded-lg sm:rounded-none"
       >
-        <div class="text-center sm:text-left w-auto order-2 sm:order-1 ">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="200"
+          data-aos-once="true"
+          data-aos-offset="0"
+          data-aos-duration="500"
+          class="text-center sm:text-left w-auto order-2 sm:order-1 "
+        >
           <p
             class="text-lg sm:text-xl md:text-2xl text-gray-500 mb-2 load-hidden v-scroll-reveal"
           >
