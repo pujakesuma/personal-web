@@ -2,7 +2,7 @@
   <wrapper class="flex items-center">
     <template #content>
       <div
-        data-aos="fade-up"
+        data-aos="fade-right"
         data-aos-easing="ease-in-back"
         data-aos-delay="200"
         data-aos-once="true"
@@ -10,7 +10,7 @@
         data-aos-duration="500"
       >
         <h2 class="text-white text-2xl font-bold sm:text-3xl md:text-4xl mb-3">
-          About Me
+          Blog
         </h2>
         <p v-for="i in 3" :key="i" class=" text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore,

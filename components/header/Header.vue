@@ -1,7 +1,7 @@
 <template>
-  <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+  <div>
     <nav
-      class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+      class="p-6 mt-0 fixed w-full z-40 pin-t bg-primary overflow-hidden"
       aria-label="Global"
     >
       <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -10,178 +10,145 @@
             <span class="sr-only">Workflow</span>
             <img
               v-lazy-load
-              class="h-8 w-auto sm:h-16"
+              class="h-10 w-auto sm:h-16"
               src="/logo.png"
               alt="logo"
             />
           </a>
-          <div class="-mr-2 flex items-center md:hidden">
-            <button
-              id="main-menu"
-              type="button"
-              class="bg-secondary rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-              aria-haspopup="true"
-              @click="isOpen = !isOpen"
-            >
-              <span class="sr-only">Open main menu</span>
-              <!-- Heroicon name: menu -->
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+          <div class="toggle-menu opacity-75 ml-6 block md:hidden">
+            <input v-model="checked" type="checkbox" />
+            <span class="bg-gray-500"></span>
+            <span class="bg-gray-500"></span>
+            <span class="bg-gray-500"></span>
           </div>
         </div>
-      </div>
-      <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
-          >About</a
-        >
+        <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >About</a
+          >
 
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
-          >Experiences</a
-        >
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >Experiences</a
+          >
 
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
-          >Work</a
-        >
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >Work</a
+          >
 
-        <a
-          href="https://ahmadridwan31.medium.com"
-          class="font-medium text-gray-500 hover:text-gray-900"
-          target="_blank"
-          >Blog</a
-        >
+          <a
+            href="https://ahmadridwan31.medium.com"
+            class="font-medium text-gray-500 hover:text-gray-300"
+            target="_blank"
+            >Blog</a
+          >
 
-        <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
-          >Contact</a
-        >
-
-        <!-- <a
-                href="#"
-                class="font-medium text-indigo-600 hover:text-indigo-500"
-                >Log in</a
-              > -->
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >Contact</a
+          >
+        </div>
       </div>
     </nav>
-    <transition
-      enter-active-class="transition ease-out duration-100 transform"
-      enter-from-class="opacity-0 scale-95"
-      enter-to-class="opacity-100 scale-100"
-      leave-active-class="transition duration-100 ease-in transform"
-      leave-from-class="opacity-100 scale-100"
-      leave-to-class="opacity-0 scale-95"
+    <nav
+      class="mobile-nav h-full pt-20 top-0 right-0 z-10 fixed block md:hidden bg-primary "
+      :class="checked ? 'w-full' : 'w-0'"
     >
-      <div
-        v-if="isOpen"
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-      >
-        <div
-          class="rounded-lg shadow-md bg-secondary ring-1 ring-black ring-opacity-5 overflow-hidden"
-        >
-          <div class="px-5 pt-4 flex items-center justify-between">
-            <div>
-              <img v-lazy-load class="h-8 w-auto" src="/logo.png" alt="logo" />
-            </div>
-            <div class="-mr-2">
-              <button
-                type="button"
-                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-gray-500 hover:text-gray-500 hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                @click="isOpen = !isOpen"
-              >
-                <span class="sr-only">Close main menu</span>
-                <!-- Heroicon name: x -->
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="main-menu"
+      <ul class="text-center relative z-20 text-xl tracking-wide">
+        <li class="py-5">
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >About</a
           >
-            <div class="px-2 pt-2 pb-3 space-y-1" role="none">
-              <a
-                href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
-                role="menuitem"
-                >About</a
-              >
-
-              <a
-                href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
-                role="menuitem"
-                >Experiences</a
-              >
-
-              <a
-                href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
-                role="menuitem"
-                >Work</a
-              >
-
-              <a
-                href="https://ahmadridwan31.medium.com"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
-                role="menuitem"
-                target="_blank"
-                >Blog</a
-              >
-
-              <a
-                href="#"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-gray-900 hover:bg-gray-300"
-                role="menuitem"
-                >Contact</a
-              >
-            </div>
-            <!-- <div role="none">
-                  <a
-                    href="#"
-                    class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                    role="menuitem"
-                  >
-                    Log in
-                  </a>
-                </div> -->
-          </div>
-        </div>
-      </div>
-    </transition>
+        </li>
+        <li class="py-5">
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >Experiences</a
+          >
+        </li>
+        <li class="py-5">
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >Work</a
+          >
+        </li>
+        <li class="py-5">
+          <a
+            href="https://ahmadridwan31.medium.com"
+            class="font-medium text-gray-500 hover:text-gray-300"
+            target="_blank"
+            >Blog</a
+          >
+        </li>
+        <li class="py-5">
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    isOpen: false,
-  }),
+  data() {
+    return {
+      checked: false,
+    };
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+.toggle-menu {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.toggle-menu input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.toggle-menu span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+.toggle-menu span:first-child {
+  transform-origin: 0% 0%;
+}
+
+.toggle-menu span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+.toggle-menu input:checked ~ span {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -2px);
+}
+
+.toggle-menu input:checked ~ span:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.toggle-menu input:checked ~ span:nth-last-child(3) {
+  transform: rotate(45deg) translate(3px, 0);
+}
+
+.mobile-nav {
+  transition: width 0.5s ease-in-out;
+}
+</style>
