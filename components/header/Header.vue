@@ -22,7 +22,7 @@
             <span class="bg-gray-500"></span>
           </div>
         </div>
-        <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+        <div class="hidden md:block md:ml-auto md:mr-28 md:space-x-8">
           <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
             >About</a
           >
