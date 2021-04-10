@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="flex items-center">
+  <wrapper class="flex">
     <template #content>
       <div
         data-aos="fade-right"
