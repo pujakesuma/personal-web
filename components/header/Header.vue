@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="p-6 mt-0 fixed w-full z-40 pin-t bg-primary overflow-hidden"
+      class="py-4 px-4 mt-0 fixed w-full z-40 pin-t bg-white overflow-hidden sm:px-12"
       aria-label="Global"
     >
       <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -10,7 +10,7 @@
             <span class="sr-only">Workflow</span>
             <img
               v-lazy-load
-              class="h-10 w-auto sm:h-16"
+              class="h-8 w-auto sm:h-12"
               src="/logo.png"
               alt="logo"
             />
@@ -23,62 +23,78 @@
           </div>
         </div>
         <div class="hidden md:block md:ml-auto md:mr-28 md:space-x-8">
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >About</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >About</nuxt-link
           >
 
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >Experiences</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >Experiences</nuxt-link
           >
 
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >Work</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >Work</nuxt-link
           >
 
           <a
             href="https://ahmadridwan31.medium.com"
-            class="font-medium text-gray-500 hover:text-gray-300"
+            class="text-gray-900 font-bold border-b-2 border-transparent hover:border-b-2 hover:border-red-900"
             target="_blank"
             >Blog</a
           >
 
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >Contact</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >Contact</nuxt-link
           >
         </div>
       </div>
     </nav>
     <nav
-      class="mobile-nav h-full pt-20 top-0 right-0 z-10 fixed block md:hidden bg-primary "
+      class="mobile-nav h-full pt-20 top-0 right-0 z-10 fixed block md:hidden bg-white"
       :class="checked ? 'w-full' : 'w-0'"
     >
       <ul class="text-center relative z-20 text-xl tracking-wide">
         <li class="py-5">
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >About</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >About</nuxt-link
           >
         </li>
         <li class="py-5">
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >Experiences</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >Experiences</nuxt-link
           >
         </li>
         <li class="py-5">
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >Work</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >Work</nuxt-link
           >
         </li>
         <li class="py-5">
           <a
             href="https://ahmadridwan31.medium.com"
-            class="font-medium text-gray-500 hover:text-gray-300"
+            class="text-gray-900 font-bold border-b-2 border-transparent hover:border-b-2 hover:border-red-900"
             target="_blank"
             >Blog</a
           >
         </li>
         <li class="py-5">
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-300"
-            >Contact</a
+          <nuxt-link
+            to="/"
+            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
+            >Contact</nuxt-link
           >
         </li>
       </ul>
@@ -90,9 +106,9 @@
 export default {
   data() {
     return {
-      checked: false,
+      checked: false
     };
-  },
+  }
 };
 </script>
 
@@ -104,7 +120,7 @@ export default {
 
 .toggle-menu input {
   display: block;
-  width: 40px;
+  width: 28px;
   height: 32px;
   position: absolute;
   cursor: pointer;

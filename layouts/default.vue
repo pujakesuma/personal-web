@@ -1,7 +1,13 @@
 <template>
-  <div class="bg-primary">
+  <div class="bg-white overflow-hidden">
     <Header />
     <Nuxt />
+    <footer class="flex flex-col items-center text-gray-900 py-4">
+      <small>
+        Designed & Built by Ahmad Ridwan
+      </small>
+      <small>&copy; Copyright {{ new Date().getFullYear() }}</small>
+    </footer>
   </div>
 </template>
 
@@ -9,8 +15,8 @@
 import Header from '@/components/header/Header';
 export default {
   components: {
-    Header,
-  },
+    Header
+  }
 };
 </script>
 

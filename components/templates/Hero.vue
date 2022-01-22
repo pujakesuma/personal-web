@@ -1,5 +1,5 @@
 <template>
-  <wrapper class="py-24">
+  <wrapper>
     <template #content>
       <div
         class="flex flex-col sm:flex-row items-center h-full rounded-lg sm:rounded-none"
@@ -11,41 +11,49 @@
           data-aos-once="true"
           data-aos-offset="0"
           data-aos-duration="500"
-          class="text-left w-auto order-2 sm:order-1 "
+          class="text-left w-full sm:w-1/2 order-2 sm:order-1 "
         >
-          <p
-            class="text-lg sm:text-2xl text-light mb-2 load-hidden v-scroll-reveal"
+          <h2
+            class="text-xl sm:text-2xl text-left capitalize font-light text-gray-900"
           >
-            Hello there, my name is
-          </p>
+            hello ! i'm
+          </h2>
+
           <h1
-            class="text-4xl sm:text-7xl tracking-tight font-extrabold text-gray-300 "
+            class="text-4xl sm:text-6xl text-left capitalize text-gray-900 mb-4"
           >
-            Ahmad Ridwan
+            <span class="font-light">
+              Ahmad
+            </span>
+            <span class="font-extrabold">
+              Ridwan
+            </span>
           </h1>
+          <div class=" w-1/3 h-0.5 bg-red-900"></div>
           <p
-            class="mt-3 text-base text-gray-500 sm:text-lg sm:max-w-xl sm:mx-auto sm:mt-5 md:text-xl lg:mx-0"
+            class="mt-3 text-base text-gray-900 sm:text-lg sm:max-w-xl sm:mx-auto sm:mt-5 lg:mx-0"
           >
-            I'm a Web Developer based in Jakarta, Indonesia. I love to shares
-            happiness, knowledge and some random stuff.
+            Software Engineer with experience and passion to deliver exceptional
+            customer experience
           </p>
-          <button-sm class="mt-5">
+
+          <!-- <button-sm class="mt-5">
             <template #text>
               contact me
             </template>
-          </button-sm>
+          </button-sm> -->
         </div>
-        <!-- <div
-          class="flex sm:hidden content-center order-1 sm:order-2 mb-8 sm:mb-0"
+        <div
+          class="flex justify-center items-end h-3/5 sm:h-full w-full sm:w-1/2 order-1 sm:order-2 mb-8 sm:mb-0"
         >
-          <div class="w-auto h-48 sm:h-96">
+          <div class="w-auto h-auto sm:h-5/6">
             <img
-              class="w-full h-full object-center object-contain"
-              src="/ar.png"
+              class="w-full h-full object-cover"
+              src="/profile.png"
               alt="image"
             />
           </div>
-        </div> -->
+        </div>
       </div>
     </template>
   </wrapper>
@@ -54,14 +62,13 @@
 <script>
 // import Header from '@/components/header/Header';
 import Wrapper from '@/components/wrapper/Wrapper';
-import ButtonSm from '@/components/button/Button';
+// import ButtonSm from '@/components/button/Button';
 export default {
   components: {
-    Wrapper,
-    ButtonSm,
+    Wrapper
   },
   data: () => ({
-    isOpen: false,
-  }),
+    isOpen: false
+  })
 };
 </script>
