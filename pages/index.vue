@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16 sm:mt-0">
+  <div>
     <Hero />
     <About />
     <Experiences />
