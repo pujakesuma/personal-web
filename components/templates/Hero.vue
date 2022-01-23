@@ -60,9 +60,7 @@
 </template>
 
 <script>
-// import Header from '@/components/header/Header';
 import Wrapper from '@/components/wrapper/Wrapper';
-// import ButtonSm from '@/components/button/Button';
 export default {
   components: {
     Wrapper
