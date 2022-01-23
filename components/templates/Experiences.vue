@@ -21,7 +21,6 @@
 </template>
 
 <script>
-// import Wrapper from '@/components/wrapper/Wrapper';
 import Timeline from '../Timeline.vue';
 export default {
   components: {
