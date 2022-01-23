@@ -36,12 +36,6 @@
             Software Engineer with experience and passion to deliver exceptional
             customer experience
           </p>
-
-          <!-- <button-sm class="mt-5">
-            <template #text>
-              contact me
-            </template>
-          </button-sm> -->
         </div>
         <div
           class="flex justify-center items-end h-3/5 sm:h-full w-full sm:w-1/2 order-1 sm:order-2 mb-8 sm:mb-0"
