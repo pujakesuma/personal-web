@@ -6,15 +6,17 @@
     >
       <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
         <div class="flex items-center justify-between w-full md:w-auto">
-          <a href="#">
+          <nuxt-link to="/">
             <span class="sr-only">Workflow</span>
-            <img
-              v-lazy-load
-              class="h-8 w-auto sm:h-12"
-              src="/logo.png"
-              alt="logo"
-            />
-          </a>
+              <NuxtImg
+                  provider="cloudinary"
+                  src="personal/logo_cajt5o.png" width="35"
+                  alt="logo"
+                  height="35"
+                  fit="thumb"
+                  format="webp"
+              />
+          </nuxt-link>
           <div class="toggle-menu opacity-75 ml-6 block md:hidden">
             <input v-model="checked" type="checkbox" />
             <span class="bg-gray-500"></span>

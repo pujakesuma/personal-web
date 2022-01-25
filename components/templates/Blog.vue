@@ -37,13 +37,15 @@
               mb-4
               "
           >
-            <div class="w-8 h-8">
-              <img
-                class="w-full h-full object-contain"
-                src="/suaksa.png"
-                alt="cover"
-              />
-            </div>
+            <NuxtImg
+                provider="cloudinary"
+                src="personal/suaksa_spgxpf.png"
+                alt="logo"
+                width="35"
+                height="35"
+                fit="cover"
+                format="webp"
+            />
           </div>
           <h4 class="font-semibold text-xl text-dark mb-3">
             Suaksa ID
