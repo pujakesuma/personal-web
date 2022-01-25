@@ -117,13 +117,30 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/eslint-module',
+    '@nuxt/image'
+  ],
 
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/pujakesuma/image/upload/v1642987985/'
+    },
+    presets: {
+      custom: {
+        modifiers: {
+          format: 'webp',
+          fit: 'cover',
+          quality: '80'
+        }
+      }
+    }
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'nuxt-lazy-load'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
