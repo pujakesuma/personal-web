@@ -8,13 +8,13 @@
         <div class="flex items-center justify-between w-full md:w-auto">
           <nuxt-link to="/">
             <span class="sr-only">Workflow</span>
-              <img
-                  src="/logo_sm.png"
-                  alt="logo"
-                  loading="lazy"
-                  width="40"
-                  height="40"
-              />
+            <img
+              src="/logo_sm.png"
+              alt="logo"
+              loading="lazy"
+              width="40"
+              height="40"
+            />
           </nuxt-link>
           <div class="toggle-menu opacity-75 ml-6 block md:hidden">
             <label class="hidden" for="check"></label>
@@ -26,19 +26,19 @@
         </div>
         <div class="hidden md:block md:ml-auto md:mr-28 md:space-x-8">
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#about' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >About</nuxt-link
           >
 
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#experiences' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >Experiences</nuxt-link
           >
 
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#works' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >Work</nuxt-link
           >
@@ -47,11 +47,12 @@
             href="https://ahmadridwan31.medium.com"
             class="text-gray-900 font-bold border-b-2 border-transparent hover:border-b-2 hover:border-red-900"
             target="_blank"
+            rel="noopener"
             >Blog</a
           >
 
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#contact' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >Contact</nuxt-link
           >
@@ -65,21 +66,21 @@
       <ul class="text-center relative z-20 text-xl tracking-wide">
         <li class="py-5">
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#about' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >About</nuxt-link
           >
         </li>
         <li class="py-5">
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#experiences' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >Experiences</nuxt-link
           >
         </li>
         <li class="py-5">
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#works' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >Work</nuxt-link
           >
@@ -89,12 +90,13 @@
             href="https://ahmadridwan31.medium.com"
             class="text-gray-900 font-bold border-b-2 border-transparent hover:border-b-2 hover:border-red-900"
             target="_blank"
+            rel="noopener"
             >Blog</a
           >
         </li>
         <li class="py-5">
           <nuxt-link
-            to="/"
+            :to="{ path: '/', hash: '#contact' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >Contact</nuxt-link
           >
