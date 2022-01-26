@@ -1,5 +1,8 @@
 <template>
-  <section class="flex justify-center items-center bg-black h-auto py-16">
+  <section
+    id="experiences"
+    class="flex justify-center items-center bg-black h-auto py-16"
+  >
     <div
       data-aos="zoom-in-down"
       data-aos-delay="200"

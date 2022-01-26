@@ -1,5 +1,9 @@
 <template>
-  <section :class="height" class="bg-white container mx-auto px-6 overflow-hidden">
+  <section
+    :id="idPage"
+    :class="height"
+    class="bg-white container mx-auto px-6 overflow-hidden"
+  >
     <slot name="content" />
   </section>
 </template>
@@ -10,6 +14,10 @@ export default {
     height: {
       type: String,
       default: 'h-screen'
+    },
+    idPage: {
+      type: String,
+      default: ''
     }
   }
 };

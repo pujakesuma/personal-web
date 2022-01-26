@@ -1,5 +1,6 @@
 <template>
   <section
+    id="works"
     class="h-auto sm:h-screen flex justify-center items-center bg-gray-50 py-16 sm:py-0"
   >
     <div
@@ -38,11 +39,11 @@
               "
           >
             <img
-                src="/suaksa.png"
-                alt="logo-suaksa"
-                loading="lazy"
-                width="40"
-                height="40"
+              src="/suaksa.png"
+              alt="logo-suaksa"
+              loading="lazy"
+              width="40"
+              height="40"
             />
           </div>
           <h3 class="font-semibold text-xl text-dark mb-3">
