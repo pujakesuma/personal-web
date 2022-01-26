@@ -45,7 +45,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/logo.png'
+        content: '/logo.svg'
       },
       { property: 'og:image:width', content: '740' },
       { property: 'og:image:height', content: '300' },
@@ -91,7 +91,8 @@ export default {
         href: '/icon/site.webmanifest.json'
       },
       {
-        rel: 'stylesheet',
+        rel: 'preload',
+        as: 'style',
         href:
           'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'
       },
