@@ -7,23 +7,24 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Ahmad Ridwan',
+    title: 'Ahmad Ridwan - Software Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Personal website to shares happiness, knowledge and some love'
+        content:
+          'Hello, my name is Ahmad Ridwan. This is my personal website to shares happiness, knowledge and some love'
       },
       {
         hid: 'apple-mobile-web-app-title',
         name: 'apple-mobile-web-app-title',
-        content: 'Ahmad Ridwan'
+        content: 'Ahmad Ridwan - Software Engineer'
       },
       {
         property: 'og:site_name',
-        content: 'Ahmad Ridwan'
+        content: 'Ahmad Ridwan - Software Engineer'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -34,7 +35,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Ahmad Ridwan'
+        content: 'Ahmad Ridwan - Software Engineer'
       },
       {
         hid: 'og:description',
@@ -60,7 +61,7 @@ export default {
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Ahmad Ridwan'
+        content: 'Ahmad Ridwan - Software Engineer'
       },
       {
         hid: 'twitter:description',
@@ -138,7 +139,16 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module', '@nuxt/image'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/eslint-module',
+    '@nuxt/image',
+    '@nuxtjs/google-analytics'
+  ],
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID // Use as fallback if no runtime config is provided
+  },
 
   image: {
     cloudinary: {
@@ -159,7 +169,8 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxtjs/gtm'
   ],
   robots: {
     UserAgent: '*',
@@ -168,6 +179,10 @@ export default {
   },
   sitemap: {
     hostname: 'https://ahmadridwan.netlify.app'
+  },
+
+  gtm: {
+    id: process.env.GOOGLE_TAG_MANAGER_ID // Used as fallback if no runtime config is provided
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -183,5 +198,14 @@ export default {
     name: 'cube-grid',
     color: '#7F1D1D',
     background: '#fff'
+  },
+
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    },
+    gtm: {
+      id: process.env.GOOGLE_TAG_MANAGER_ID
+    }
   }
 };
