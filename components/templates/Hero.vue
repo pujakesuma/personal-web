@@ -41,7 +41,12 @@
           class="flex justify-center items-end h-3/5 sm:h-full w-full sm:w-1/2 order-1 sm:order-2 mb-8 sm:mb-0"
         >
           <div class="w-auto h-auto sm:h-5/6">
-            <NuxtImg provider="cloudinary" src="personal/profile_nclzvw.png" alt="img-main" preset="custom" />
+            <NuxtImg
+                provider="cloudinary"
+                src="personal/profile_nclzvw.png"
+                alt="img-main"
+                preset="custom"
+                class="w-full h-full" />
           </div>
         </div>
       </div>

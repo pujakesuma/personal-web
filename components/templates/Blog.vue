@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="h-auto sm:h-screen flex justify-center items-center bg-gray-50 py-16 sm:py-0"
   >
     <div
@@ -37,19 +37,17 @@
               mb-4
               "
           >
-            <NuxtImg
-                provider="cloudinary"
-                src="personal/suaksa_spgxpf.png"
-                alt="logo"
-                width="35"
-                height="35"
-                fit="cover"
-                format="webp"
+            <img
+                src="/suaksa.png"
+                alt="logo-suaksa"
+                loading="lazy"
+                width="40"
+                height="40"
             />
           </div>
-          <h4 class="font-semibold text-xl text-dark mb-3">
+          <h3 class="font-semibold text-xl text-dark mb-3">
             Suaksa ID
-          </h4>
+          </h3>
           <p class="text-body-color">
             Our current project E-Invitation with 10+ user in 4 month. Built
             with Nuxt JS and Node JS.
@@ -57,7 +55,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

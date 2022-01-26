@@ -8,17 +8,17 @@
         <div class="flex items-center justify-between w-full md:w-auto">
           <nuxt-link to="/">
             <span class="sr-only">Workflow</span>
-              <NuxtImg
-                  provider="cloudinary"
-                  src="personal/logo_cajt5o.png" width="35"
+              <img
+                  src="/logo_sm.png"
                   alt="logo"
-                  height="35"
-                  fit="thumb"
-                  format="webp"
+                  loading="lazy"
+                  width="40"
+                  height="40"
               />
           </nuxt-link>
           <div class="toggle-menu opacity-75 ml-6 block md:hidden">
-            <input v-model="checked" type="checkbox" />
+            <label class="hidden" for="check"></label>
+            <input id="check" v-model="checked" type="checkbox" />
             <span class="bg-gray-500"></span>
             <span class="bg-gray-500"></span>
             <span class="bg-gray-500"></span>
