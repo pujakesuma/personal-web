@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center bg-black h-auto py-16">
+  <section class="flex justify-center items-center bg-black h-auto py-16">
     <div
       data-aos="zoom-in-down"
       data-aos-delay="200"
@@ -8,16 +8,16 @@
       data-aos-duration="500"
       class="w-11/12 sm:w-3/4"
     >
-      <h1
+      <h2
         class="text-2xl sm:text-4xl tracking-wide text-center font-extrabold text-white mb-4"
       >
         Experiences
-      </h1>
+      </h2>
       <div>
         <Timeline />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

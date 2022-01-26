@@ -1,7 +1,7 @@
 <template>
-  <div :class="height" class="bg-white container mx-auto px-6 overflow-hidden">
+  <section :class="height" class="bg-white container mx-auto px-6 overflow-hidden">
     <slot name="content" />
-  </div>
+  </section>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white overflow-hidden">
+  <main class="bg-white overflow-hidden">
     <Header />
     <Nuxt />
     <footer class="flex flex-col items-center text-gray-900 py-4">
@@ -8,7 +8,7 @@
       </small>
       <small>&copy; Copyright {{ new Date().getFullYear() }}</small>
     </footer>
-  </div>
+  </main>
 </template>
 
 <script>

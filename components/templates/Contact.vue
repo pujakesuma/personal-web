@@ -1,5 +1,5 @@
 <template>
-  <div class="h-auto py-16 px-6 sm:px-0 flex justify-center items-center">
+  <section class="h-auto py-16 px-6 sm:px-0 flex justify-center items-center">
     <div
       data-aos="fade-left"
       data-aos-easing="ease-in-back"
@@ -27,7 +27,7 @@
         </template>
       </custom-button>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

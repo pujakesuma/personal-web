@@ -26,11 +26,11 @@
             data-aos-offset="0"
             data-aos-duration="500"
         >
-          <h1
+          <h2
               class="text-2xl sm:text-4xl tracking-wide text-left font-extrabold text-gray-900 mb-4"
           >
             About Me
-          </h1>
+          </h2>
           <div class="w-1/3 h-0.5 bg-red-900"></div>
           <p
               class="text-base text-gray-900 sm:max-w-xl sm:mx-auto sm:text-lg lg:mx-0 mb-2 mt-4"
