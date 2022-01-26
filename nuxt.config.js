@@ -182,7 +182,27 @@ export default {
   },
 
   gtm: {
-    id: process.env.GOOGLE_TAG_MANAGER_ID // Used as fallback if no runtime config is provided
+    id: process.env.GOOGLE_TAG_MANAGER_ID, // Used as fallback if no runtime config is provided
+    enabled: true /* see below */,
+    debug: false,
+
+    layer: 'dataLayer',
+    variables: {},
+
+    pageTracking: false,
+    pageViewEventName: 'nuxtRoute',
+
+    autoInit: true,
+    respectDoNotTrack: true,
+
+    scriptId: 'gtm-script',
+    scriptDefer: false,
+    scriptURL: 'https://www.googletagmanager.com/gtm.js',
+    crossOrigin: false,
+
+    noscript: true,
+    noscriptId: 'gtm-noscript',
+    noscriptURL: 'https://www.googletagmanager.com/ns.html'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
