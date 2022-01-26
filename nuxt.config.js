@@ -29,7 +29,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://ahmadridwan.netlify.app'
+        content: 'https://ahmadridwan.netlify.app/'
       },
       {
         hid: 'og:title',
@@ -55,7 +55,7 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://ahmadridwan.netlify.app'
+        content: 'https://ahmadridwan.netlify.app/'
       },
       {
         hid: 'twitter:title',
@@ -71,24 +71,44 @@ export default {
         hid: 'twitter:image',
         name: 'twitter:image',
         content: '/logo.png'
+      },
+      {
+        name: 'msapplication-TileColor',
+        content: '#ffffff'
+      },
+      {
+        name: 'theme-color',
+        content: '#ffffff'
       }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon/favicon.ico' },
       {
-        hid: 'shortcut-icon',
-        rel: 'shortcut icon',
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/icon/favicon-16x16.png'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
         href: '/icon/favicon-32x32.png'
       },
       {
-        hid: 'apple-touch-icon',
         rel: 'apple-touch-icon',
+        sizes: '180x180',
         href: '/icon/apple-touch-icon.png'
       },
       {
         rel: 'manifest',
         hid: 'manifest',
         href: '/icon/site.webmanifest.json'
+      },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: 'https://ahmadridwan.netlify.app/'
       },
       {
         rel: 'preload',
@@ -118,11 +138,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/eslint-module',
-    '@nuxt/image'
-  ],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/eslint-module', '@nuxt/image'],
 
   image: {
     cloudinary: {
@@ -142,7 +158,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
+  robots: {
+    UserAgent: '*',
+    Allow: '/',
+    Sitemap: 'https://ahmadridwan.netlify.app/sitemap.xml'
+  },
+  sitemap: {
+    hostname: 'https://ahmadridwan.netlify.app'
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
