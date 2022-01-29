@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Ahmad Ridwan - Software Engineer',
+    title: 'Ahmad Ridwan | Software Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,22 +20,22 @@ export default {
       {
         hid: 'apple-mobile-web-app-title',
         name: 'apple-mobile-web-app-title',
-        content: 'Ahmad Ridwan - Software Engineer'
+        content: 'Ahmad Ridwan | Software Engineer'
       },
       {
         property: 'og:site_name',
-        content: 'Ahmad Ridwan - Software Engineer'
+        content: 'Ahmad Ridwan | Software Engineer'
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://ahmadridwan.netlify.app/'
+        content: 'https://ahmadridwan.id/'
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Ahmad Ridwan - Software Engineer'
+        content: 'Ahmad Ridwan | Software Engineer'
       },
       {
         hid: 'og:description',
@@ -56,12 +56,12 @@ export default {
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: 'https://ahmadridwan.netlify.app/'
+        content: 'https://ahmadridwan.id/'
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Ahmad Ridwan - Software Engineer'
+        content: 'Ahmad Ridwan | Software Engineer'
       },
       {
         hid: 'twitter:description',
@@ -109,7 +109,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://ahmadridwan.netlify.app/'
+        href: 'https://ahmadridwan.id/'
       },
       {
         rel: 'preload',
@@ -175,10 +175,10 @@ export default {
   robots: {
     UserAgent: '*',
     Allow: '/',
-    Sitemap: 'https://ahmadridwan.netlify.app/sitemap.xml'
+    Sitemap: 'https://ahmadridwan.id/sitemap.xml'
   },
   sitemap: {
-    hostname: 'https://ahmadridwan.netlify.app'
+    hostname: 'https://ahmadridwan.id'
   },
 
   gtm: {
