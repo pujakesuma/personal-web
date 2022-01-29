@@ -2,7 +2,7 @@
   <wrapper
     :id-page="'about'"
     :height="'h-auto sm:h-screen'"
-    class="pb-16 pt-8 sm:pb-0 sm:pt-0"
+    class="py-16 sm:pb-0 sm:pt-0"
   >
     <template #content>
       <div
