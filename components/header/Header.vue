@@ -64,21 +64,21 @@
       :class="checked ? 'w-full' : 'w-0'"
     >
       <ul class="text-center relative z-20 text-xl tracking-wide">
-        <li class="py-5">
+        <li class="py-5" @click="closeNav">
           <nuxt-link
             :to="{ path: '/', hash: '#about' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >About</nuxt-link
           >
         </li>
-        <li class="py-5">
+        <li class="py-5" @click="closeNav">
           <nuxt-link
             :to="{ path: '/', hash: '#experiences' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
             >Experiences</nuxt-link
           >
         </li>
-        <li class="py-5">
+        <li class="py-5" @click="closeNav">
           <nuxt-link
             :to="{ path: '/', hash: '#works' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
@@ -94,7 +94,7 @@
             >Blog</a
           >
         </li>
-        <li class="py-5">
+        <li class="py-5" @click="closeNav">
           <nuxt-link
             :to="{ path: '/', hash: '#contact' }"
             class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
@@ -112,6 +112,12 @@ export default {
     return {
       checked: false
     };
+  },
+  methods: {
+    closeNav() {
+      console.log('coek');
+      this.checked = false;
+    }
   }
 };
 </script>
