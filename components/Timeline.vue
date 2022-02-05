@@ -3,7 +3,7 @@
     <!-- left -->
     <div class="flex flex-row-reverse md:contents">
       <div
-        class="bg-white col-start-1 col-end-5 p-6 rounded-xl my-4 ml-auto shadow-md"
+        class="bg-white col-start-1 col-end-5 p-6 rounded-xl my-4 ml-auto shadow-lg"
       >
         <h3 class="font-bold text-lg">Front End Developer</h3>
         <div class="w-1/12 h-0.5 bg-red-900 my-1"></div>
@@ -14,27 +14,27 @@
           banking application named New Delivery System (NDS).
         </p>
       </div>
-      <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-        <div class="h-full w-6 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-400 pointer-events-none"></div>
+      <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+        <div class="h-full w-4 flex items-center justify-center">
+          <div class="h-full w-1 bg-red-800 pointer-events-none"></div>
         </div>
         <div
-          class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow"
+          class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-red-900 shadow"
         ></div>
       </div>
     </div>
     <!-- right -->
     <div class="flex md:contents">
-      <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-        <div class="h-full w-6 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-400 pointer-events-none"></div>
+      <div class="col-start-5 col-end-6 mr-8 md:mx-auto relative">
+        <div class="h-full w-4 flex items-center justify-center">
+          <div class="h-full w-1 bg-red-800 pointer-events-none"></div>
         </div>
         <div
-          class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow"
+          class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-red-900 shadow"
         ></div>
       </div>
       <div
-        class="bg-white col-start-6 col-end-10 p-6 rounded-xl my-4 mr-auto shadow-md"
+        class="bg-white col-start-6 col-end-10 p-6 rounded-xl my-4 mr-auto shadow-lg"
       >
         <h3 class="font-bold text-lg">Full Stack Developer</h3>
         <div class="w-1/12 h-0.5 bg-red-900 my-1"></div>
@@ -49,7 +49,7 @@
     <!-- left -->
     <div class="flex flex-row-reverse md:contents">
       <div
-        class="bg-white col-start-1 col-end-5 p-6 rounded-xl my-4 ml-auto shadow-md"
+        class="bg-white col-start-1 col-end-5 p-6 rounded-xl my-4 ml-auto shadow-lg"
       >
         <h3 class="font-bold text-lg">IT Infrastructure Support</h3>
         <div class="w-1/12 h-0.5 bg-red-900 my-1"></div>
@@ -60,12 +60,12 @@
           Maybank Indonesia Regional South Sumatera.
         </p>
       </div>
-      <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-        <div class="h-full w-6 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-400 pointer-events-none"></div>
+      <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
+        <div class="h-full w-4 flex items-center justify-center">
+          <div class="h-full w-1 bg-red-800 pointer-events-none"></div>
         </div>
         <div
-          class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-white shadow"
+          class="w-4 h-4 absolute top-1/2 -mt-3 rounded-full bg-red-900 shadow"
         ></div>
       </div>
     </div>
