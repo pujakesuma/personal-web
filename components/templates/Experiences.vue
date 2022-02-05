@@ -1,7 +1,7 @@
 <template>
   <section
     id="experiences"
-    class="flex justify-center items-center bg-black h-auto py-16"
+    class="flex justify-center items-center bg-white h-auto py-16"
   >
     <div
       data-aos="zoom-in-down"
@@ -12,7 +12,7 @@
       class="w-11/12 sm:w-3/4"
     >
       <h2
-        class="text-2xl sm:text-4xl tracking-wide text-center font-extrabold text-white mb-4"
+        class="text-2xl sm:text-4xl tracking-wide text-center font-extrabold text-gray-900 mb-4"
       >
         Experiences
       </h2>
