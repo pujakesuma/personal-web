@@ -45,11 +45,6 @@ export default {
           label: 'Instagram'
         },
         {
-          icon: 'gsicon-twitter',
-          link: 'https://twitter.com/ahmadrdwann',
-          label: 'Twitter'
-        },
-        {
           icon: 'gsicon-youtube',
           link: 'https://www.youtube.com/channel/UCQ5Ki8OzJi_t1xTbkymYqMQ',
           label: 'Youtube'
