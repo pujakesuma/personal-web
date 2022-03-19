@@ -10,8 +10,8 @@
         <h4 class="font-semibold text-sm">PT Lawencon Internasional</h4>
         <h5 class="font-light text-sm">May 2021 - Present</h5>
         <p class="text-sm text-left mt-2">
-          Working with Operation Department of PT Bank Rakyat Indonesia, build
-          banking application named New Delivery System (NDS).
+          Working at PT Bank Rakyat Indonesia, build banking application named
+          New Delivery System (NDS).
         </p>
       </div>
       <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
