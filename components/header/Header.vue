@@ -19,9 +19,9 @@
           <div class="toggle-menu opacity-75 ml-6 block md:hidden">
             <label class="hidden" for="check"></label>
             <input id="check" v-model="checked" type="checkbox" />
-            <span class="bg-gray-500"></span>
-            <span class="bg-gray-500"></span>
-            <span class="bg-gray-500"></span>
+            <span class="bg-gray-900"></span>
+            <span class="bg-gray-900"></span>
+            <span class="bg-gray-900"></span>
           </div>
         </div>
         <div class="hidden md:block md:ml-auto md:mr-28 md:space-x-8">
