@@ -48,12 +48,8 @@
             class="text-base text-gray-900 sm:max-w-xl sm:mx-auto sm:text-lg lg:mx-0 mb-2"
           >
             I've had working at start-up, IT consultant/service and a
-            Corporation. My main focus these days is on Front End Development.
-          </p>
-          <p
-            class="text-base text-gray-900 sm:max-w-xl sm:mx-auto sm:text-lg lg:mx-0"
-          >
-            I also recently launched an E-Invitation named "Suaksa ID".
+            Corporation. My main focus these days is on Frontend Web
+            Technologies.
           </p>
         </div>
       </div>
