@@ -8,10 +8,12 @@
         <h3 class="font-bold text-lg">Front End Developer</h3>
         <div class="w-1/12 h-0.5 bg-red-900 my-1"></div>
         <h4 class="font-semibold text-sm">PT Lawencon Internasional</h4>
-        <h5 class="font-light text-sm">May 2021 - Present</h5>
+        <!-- <h5 class="font-light text-sm">May 2021 - Present</h5> -->
         <p class="text-sm text-left mt-2">
-          Working at PT Bank Rakyat Indonesia, build banking application named
-          New Delivery System (NDS).
+          Work at PT Bank Rakyat Indonesia, developing new user-facing features,
+          determining the structure and design of web pages, building reusable
+          codes, optimizing page loading times. Using Quasar Framework to create
+          web app named "New Delivery System".
         </p>
       </div>
       <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
@@ -39,7 +41,7 @@
         <h3 class="font-bold text-lg">Full Stack Developer</h3>
         <div class="w-1/12 h-0.5 bg-red-900 my-1"></div>
         <h4 class="font-semibold text-sm">PT Teknika Cipta Lestari</h4>
-        <h5 class="font-light text-sm">Mar 2020 - Apr 2021</h5>
+        <!-- <h5 class="font-light text-sm">Mar 2020 - Apr 2021</h5> -->
         <p class="text-sm text-left mt-2">
           Build property and real estate web application named "Propertinext"
           for buy or rent property.
@@ -54,10 +56,12 @@
         <h3 class="font-bold text-lg">IT Infrastructure Support</h3>
         <div class="w-1/12 h-0.5 bg-red-900 my-1"></div>
         <h4 class="font-semibold text-sm">PT Infomedia Nusantara</h4>
-        <h5 class="font-light text-sm">Oct 2019 - Dec 2019</h5>
+        <!-- <h5 class="font-light text-sm">Oct 2019 - Dec 2019</h5> -->
         <p class="text-sm text-left mt-2">
-          Handling troubleshooting and monitoring IT infrastructure of Bank
-          Maybank Indonesia Regional South Sumatera.
+          Installing and configuring computer hardware, software, systems,
+          networks, printers, and scanners. Monitoring and maintaining computer
+          systems and networks. Responding in a timely manner to service issues
+          and requests. Providing technical support across the company
         </p>
       </div>
       <div class="col-start-5 col-end-6 md:mx-auto relative mr-8">
