@@ -36,8 +36,8 @@
         <p
           class="mt-3 text-base text-gray-900 sm:text-lg sm:max-w-xl sm:mx-auto sm:mt-5 lg:mx-0"
         >
-          Software Engineer with experience and passion to deliver exceptional
-          customer experience
+          Software Engineer with experience and passion for delivering an
+          exceptional customer experience
         </p>
       </div>
       <div
@@ -60,7 +60,7 @@
 <script>
 export default {
   data: () => ({
-    isOpen: false
-  })
+    isOpen: false,
+  }),
 };
 </script>
