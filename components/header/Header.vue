@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="container mx-auto">
     <nav
-      class="py-4 px-4 mt-0 fixed w-full z-40 pin-t bg-white overflow-hidden sm:px-12"
+      class="container mx-auto py-4 px-4 mt-0 fixed z-40 pin-t bg-white overflow-hidden sm:px-12"
       aria-label="Global"
     >
       <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -24,25 +24,7 @@
             <span class="bg-gray-900"></span>
           </div>
         </div>
-        <div class="hidden md:block md:ml-auto md:mr-28 md:space-x-8">
-          <nuxt-link
-            :to="{ path: '/', hash: '#about' }"
-            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
-            >About</nuxt-link
-          >
-
-          <nuxt-link
-            :to="{ path: '/', hash: '#experiences' }"
-            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
-            >Experiences</nuxt-link
-          >
-
-          <nuxt-link
-            :to="{ path: '/', hash: '#works' }"
-            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
-            >Work</nuxt-link
-          >
-
+        <div class="hidden md:block md:ml-auto md:mr-12 md:space-x-8">
           <a
             href="https://ahmadridwan31.medium.com"
             class="text-gray-900 font-bold border-b-2 border-transparent hover:border-b-2 hover:border-red-900"
@@ -60,31 +42,10 @@
       </div>
     </nav>
     <nav
-      class="mobile-nav h-full pt-20 top-0 right-0 z-10 fixed block md:hidden bg-white"
+      class="mobile-nav h-full pt-20 top-0 right-0 z-10 fixed flex flex-col pb-8 justify-between md:hidden bg-white"
       :class="checked ? 'w-full' : 'w-0'"
     >
       <ul class="text-center relative z-20 text-xl tracking-wide">
-        <li class="py-5" @click="closeNav">
-          <nuxt-link
-            :to="{ path: '/', hash: '#about' }"
-            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
-            >About</nuxt-link
-          >
-        </li>
-        <li class="py-5" @click="closeNav">
-          <nuxt-link
-            :to="{ path: '/', hash: '#experiences' }"
-            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
-            >Experiences</nuxt-link
-          >
-        </li>
-        <li class="py-5" @click="closeNav">
-          <nuxt-link
-            :to="{ path: '/', hash: '#works' }"
-            class="text-gray-900 border-b-2 border-transparent font-bold hover:border-b-2 hover:border-red-900"
-            >Work</nuxt-link
-          >
-        </li>
         <li class="py-5">
           <a
             href="https://ahmadridwan31.medium.com"
@@ -102,6 +63,21 @@
           >
         </li>
       </ul>
+      <div class="block w-full mx-auto mb-4" style="max-width: 270px">
+        <ul class="flex justify-between items-center">
+          <li v-for="(item, i) in social" :key="i">
+            <a
+              :href="item.link"
+              class="p-4"
+              :aria-label="item.label"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i :class="item.icon" class="text-gray-900 text-xl"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 </template>
@@ -110,15 +86,41 @@
 export default {
   data() {
     return {
-      checked: false
+      checked: false,
+      social: [
+        {
+          icon: 'gsicon-github',
+          link: 'https://github.com/pujakesuma',
+          label: 'GitHub',
+        },
+        {
+          icon: 'gsicon-linkedin',
+          link: 'https://www.linkedin.com/in/ahmad-ridwan/',
+          label: 'Linkedin',
+        },
+        {
+          icon: 'gsicon-instagram',
+          link: 'https://www.instagram.com/ahmad.rdwann/',
+          label: 'Instagram',
+        },
+        {
+          icon: 'gsicon-twitter',
+          link: 'https://twitter.com/ahmadrdwann',
+          label: 'Twitter',
+        },
+        {
+          icon: 'gsicon-youtube',
+          link: 'https://www.youtube.com/channel/UCQ5Ki8OzJi_t1xTbkymYqMQ',
+          label: 'Youtube',
+        },
+      ],
     };
   },
   methods: {
     closeNav() {
-      console.log('coek');
       this.checked = false;
-    }
-  }
+    },
+  },
 };
 </script>
 

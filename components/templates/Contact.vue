@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    class="h-auto py-16 px-6 sm:px-0 flex justify-center items-center"
+    class="h-auto pt-20 pb-16 px-6 sm:px-0 flex justify-center items-center"
   >
     <div
       data-aos="fade-left"
@@ -36,13 +36,13 @@
 <script>
 export default {
   components: {
-    CustomButton: () => import('@/components/button/Button')
+    CustomButton: () => import('@/components/button/Button'),
   },
   methods: {
     emailMe() {
       const url = 'mailto: ahmadridwan.3107@gmail.com';
       window.open(url, '_blank');
-    }
-  }
+    },
+  },
 };
 </script>
