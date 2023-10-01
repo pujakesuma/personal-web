@@ -46,7 +46,7 @@
         <div class="w-auto h-auto sm:h-5/6">
           <NuxtImg
             provider="cloudinary"
-            src="personal/profile_nclzvw.png"
+            src="profile_nclzvw.png"
             alt="img-main"
             preset="custom"
             class="w-full h-full"
